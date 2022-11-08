@@ -41,8 +41,11 @@ const Header = () => {
           </ul>
         </div>
         <Link to="/" className="">
-          <div className="">
+          <div className="flex">
             <img className="h-24 w-28" src={logo} alt="" />
+            <h1 className="text-3xl font-bold text-orange-400 mt-4">
+              The Artsy Lens
+            </h1>
           </div>
         </Link>
       </div>
