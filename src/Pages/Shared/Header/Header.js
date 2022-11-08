@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.png";
+import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
   const menuItems = (
     <>
       <li className="font-semibold">
@@ -11,9 +16,20 @@ const Header = () => {
       <li className="font-semibold">
         <Link to="/blog">Blog</Link>
       </li>
-      <li className="font-semibold">
-        <Link to="/login">Login</Link>
-      </li>
+
+      {user?.email ? (
+        <>
+          <li className="font-semibold">
+            <button onClick={handleLogOut} className="btn btn-primary">
+              Log out
+            </button>
+          </li>
+        </>
+      ) : (
+        <li className="font-semibold">
+          <Link to="/login">Login</Link>
+        </li>
+      )}
     </>
   );
   return (

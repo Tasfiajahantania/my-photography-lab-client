@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider/AuthProvider";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const SignUp = () => {
   const { createUser } = useContext(AuthContext);
@@ -14,6 +15,7 @@ const SignUp = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        event.target.reset();
       })
       .catch((err) => console.error(err));
   };
@@ -59,6 +61,7 @@ const SignUp = () => {
         <div className="form-control mt-6">
           <input className="btn btn-primary" type="submit" value="Sign Up" />
         </div>
+        <SocialLogin></SocialLogin>
       </form>
       <p className="text-center">
         Already have an account?{" "}
