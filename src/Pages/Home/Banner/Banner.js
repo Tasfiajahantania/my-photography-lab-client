@@ -13,15 +13,15 @@ const Banner = () => {
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4">
           <h1 className="text-6xl font-bold text-white">
-            Affordable <br />
-            Price for Car <br />
-            Servicing
+            Get professional <br />
+            photos <br />
+            from me
           </h1>
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 w-2/5 left-24 top-1/2">
           <p className="text-xl text-white">
-            There are many variations of passages of available, but the majority
-            have suffered alteration in some form
+            I take any kind of pictures. Clients give very good reviews on my
+            services
           </p>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -39,15 +39,15 @@ const Banner = () => {
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4">
           <h1 className="text-6xl font-bold text-white">
-            Affordable <br />
-            Price for Car <br />
-            Servicing
+            Get professional <br />
+            photos <br />
+            from me
           </h1>
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 w-2/5 left-24 top-1/2">
           <p className="text-xl text-white">
-            There are many variations of passages of available, but the majority
-            have suffered alteration in some form
+            I take any kind of pictures. Clients give very good reviews on my
+            services
           </p>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -65,15 +65,15 @@ const Banner = () => {
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4">
           <h1 className="text-6xl font-bold text-white">
-            Affordable <br />
-            Price for Car <br />
-            Servicing
+            Get professional <br />
+            photos <br />
+            from me
           </h1>
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 w-2/5 left-24 top-1/2">
           <p className="text-xl text-white">
-            There are many variations of passages of available, but the majority
-            have suffered alteration in some form
+            I take any kind of pictures. Clients give very good reviews on my
+            services
           </p>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -91,15 +91,15 @@ const Banner = () => {
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4">
           <h1 className="text-6xl font-bold text-white">
-            Affordable <br />
-            Price for Car <br />
-            Servicing
+            Get professional <br />
+            photos <br />
+            from me
           </h1>
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 w-2/5 left-24 top-1/2">
           <p className="text-xl text-white">
-            There are many variations of passages of available, but the majority
-            have suffered alteration in some form
+            I take any kind of pictures. Clients give very good reviews on my
+            services
           </p>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

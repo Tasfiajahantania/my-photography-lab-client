@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer footer-center p-10 bg-gray-900 text-white rounded">
       <div className="grid grid-flow-col gap-4">
         <a href="/" className="link link-hover">
-          About us
+          About me<menu></menu>
         </a>
         <a href="/" className="link link-hover">
           Contact
