@@ -1,0 +1,46 @@
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
+
+const AddReviews = ({ _id }) => {
+  const { user } = useContext(AuthContext);
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    const userReview = e.target.review.value;
+    const review = {
+      service: _id,
+      email: user?.email,
+      review: userReview,
+    };
+    fetch(`http://localhost:5000/add-review`, {
+      method: "Post",
+    });
+  };
+  return (
+    <div>
+      {user?.email ? (
+        <>
+          <form
+            onSubmit={handleOnSubmit}
+            className="flex justify-center align-middle flex-col"
+          >
+            <textarea
+              name="review"
+              className="textarea textarea-bordered h-24"
+              placeholder="Write your review here..."
+            ></textarea>
+            <button className="btn btn-warning my-8 w-28 ">Add</button>
+          </form>
+        </>
+      ) : (
+        <button className="btn btn-warning my-8">
+          <Link to="/login">Login first for review</Link>
+        </button>
+      )}
+    </div>
+  );
+};
+
+export default AddReviews;

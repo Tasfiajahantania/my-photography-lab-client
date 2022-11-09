@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -14,6 +15,7 @@ const Login = () => {
     login(email, password)
       .then((result) => {
         const user = result.user;
+        toast.success("successful login");
         console.log(user);
         event.target.reset();
       })
