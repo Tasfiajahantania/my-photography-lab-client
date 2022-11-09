@@ -14,7 +14,10 @@ const SocialLogin = () => {
   };
   return (
     <div className="mx-auto">
-      <button onClick={handleGoogleSignIn} className="btn btn-primary w-full">
+      <button
+        onClick={handleGoogleSignIn}
+        className="btn btn-primary w-full text-white"
+      >
         <FaGoogle />
       </button>
     </div>
