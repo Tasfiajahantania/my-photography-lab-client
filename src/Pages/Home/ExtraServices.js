@@ -17,7 +17,7 @@ const ExtraServices = () => {
             for the last 10 years, I work as a photographer in various events,
             my main objective is to satisfy the client.
           </p>
-          <Link to="/signup">
+          <Link to="/">
             <button className="btn btn-primary">Get Started</button>
           </Link>
         </div>
