@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/logo/logo.png";
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
-
+import './Header.css';
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
@@ -26,7 +26,7 @@ const Header = () => {
             <Link to="/add-service">Add service</Link>
           </li>
           <li className="font-semibold">
-            <button onClick={handleLogOut} className="btn btn-primary">
+            <button onClick={handleLogOut} className="logout-button">
               Log out
             </button>
           </li>
@@ -39,7 +39,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-sky-900 text-white h-24 mb-12 p-8">
+    <div className="navbar bg-white text-black h-14 mb-12 p-8">
       <div className="navbar-start">
         <div className="dropdown text-orange-700">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -65,15 +65,15 @@ const Header = () => {
             {menuItems}
           </ul>
         </div>
+        {/* Logo  */}
         <Link to="/" className="">
           <div className="flex">
-            <img className="h-24 w-28" src={logo} alt="" />
-            <h1 className="text-3xl font-bold text-orange-400 mt-4">
-              The Artsy Lens
-            </h1>
+            <img className="logo" src={logo} alt="" />
           </div>
         </Link>
       </div>
+
+      {/* Menu list  */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
