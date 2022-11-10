@@ -16,7 +16,7 @@ const SocialLogin = () => {
     <div className="mx-auto">
       <button
         onClick={handleGoogleSignIn}
-        className="btn btn-primary w-full text-white"
+        className="bg-pink-400 w-full px-36 py-3 rounded-full text-white"
       >
         <FaGoogle />
       </button>

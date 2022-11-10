@@ -8,6 +8,7 @@ const AddReviews = (props) => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
+
     const userReview = e.target.review.value;
     const reviewData = {
       service: props.id,
