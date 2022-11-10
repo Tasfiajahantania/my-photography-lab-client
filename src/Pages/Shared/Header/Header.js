@@ -20,7 +20,7 @@ const Header = () => {
       {user?.email ? (
         <>
           <li className="font-semibold">
-            <Link to="/reviews">My Reviews</Link>
+            <Link to="/my-review">My Reviews</Link>
           </li>
           <li className="font-semibold">
             <Link to="/add-service">Add service</Link>
@@ -39,7 +39,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-sky-800 text-white h-24 mb-12 p-8">
+    <div className="navbar bg-sky-900 text-white h-24 mb-12 p-8">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

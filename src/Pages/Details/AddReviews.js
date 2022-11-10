@@ -15,7 +15,7 @@ const AddReviews = (props) => {
       email: user?.email,
       review: userReview,
     };
-    fetch(`http://localhost:5000/add-review`, {
+    fetch(`https://assignment-11-server-neon.vercel.app/add-review`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

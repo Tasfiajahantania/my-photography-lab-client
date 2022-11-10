@@ -5,7 +5,9 @@ import ReviewRow from "./ReviewRow";
 const Reviews = (props) => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/review/${props.serviceId}`)
+    fetch(
+      `https://assignment-11-server-neon.vercel.app/review/${props.serviceId}`
+    )
       .then((res) => res.json())
       .then((data) => setReviews(data));
   });
