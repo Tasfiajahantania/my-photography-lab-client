@@ -1,0 +1,10 @@
+/* Header logo  */
+.logo {
+    max-width: 200px !important;
+}
+
+/* Logout button  */
+.logout-button {
+    background: linear-gradient(45deg, #00a0ff, #64f0ff);
+    color: #fff;
+}
