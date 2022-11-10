@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const ReviewService = (props) => {
   const [service, setService] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${props.id}`)
+    fetch(`https://assignment-11-server-neon.vercel.app/service/${props.id}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
